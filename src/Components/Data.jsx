@@ -3,12 +3,12 @@ import React from 'react';
 const Data = ({users}) => {
   return (
     <div className="p-6 bg-gray-100 min-h-screen flex justify-center items-start">
-      <div className=" w-full max-w-6xl">
+      <div className=" w-full max-w-6xl overflow-x-auto">
         <table className="table-auto w-full border border-gray-300 shadow-md rounded-lg">
           <thead className="bg-gray-200">
             <tr>
-              <th className="px-4 py-2 text-left border">User Title</th>
-              <th className="px-4 py-2 text-left border">First Name</th>
+              <th className="px-4 py-2 text-left border ">User Title</th>
+              <th className="px-4 py-2 text-left border ">First Name</th>
               <th className="px-4 py-2 text-left border">Last Name</th>
               <th className="px-4 py-2 text-left border">User Name</th>
               <th className="px-4 py-2 text-left border">User Password</th>
@@ -37,7 +37,7 @@ const Data = ({users}) => {
                 <td className="px-4 py-2 border">{user.userName}</td>
                 <td className="px-4 py-2 border">{"*".repeat(user.password.length)}</td>
                 <td className="px-4 py-2 border">{user.contact}</td>
-                <td className="px-4 py-2 border">{user.email}</td>
+                <td className="px-4 py-2 border truncate max-w-[150px]">{user.email}</td>
                 <td className="px-4 py-2 border">{user.gender}</td>
                 <td className="px-4 py-2 border">{user.role}</td>
                 <td className="px-4 py-2 border">

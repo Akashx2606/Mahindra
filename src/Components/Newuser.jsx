@@ -21,7 +21,7 @@ const Newuser = () => {
     const { name, value, files } = e.target;
     setFormData({
       ...formData,
-      [name]: files ? files[0] : value, // for file inputs
+      [name]: files ? files[0] : value
     });
   };
 
@@ -295,7 +295,7 @@ const Newuser = () => {
       </div>
 
       {/* Table (2/3 width) */}
-      <div className="w-2/3 p-6">
+      <div className="w-2/3 p-6 ">
         <Data users={users} />
       </div>
     </div>
